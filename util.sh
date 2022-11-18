@@ -18,7 +18,14 @@ menu(){
 	echo "8. Show space available on hard disk"
 	echo "9. Flex arch btw :)"
 	echo "10. Exit"
-	echo
+	echo "11. Auto-accepts such messages by passing yes"
+	echo "12. Move or rename files in linux"
+	echo "13. Get's active username"
+	echo "14. Display all active processes"
+	echo "15. Display disk filesystem information"
+	echo "16. Direct download files from the internet"
+	echo "17. Find what the command is used for"
+	echo "18. View active procceses live in the system"
 	echo "----------------------------"
 	echo
 	echo "Please enter option [1 - 10]:"  
@@ -43,6 +50,14 @@ do
 		8) df -i;;
 		9) neofetch | lolcat;;
 		10) break;; # exit menu
+		11) yes | foo;; #auto accepts commands by passing yes to the command
+		12) mv <filename> <new_filename>;;
+		13) whoami;;
+		14) ps;;
+		15) df;;
+		16) wget <URL>;;
+		17) whatis <command>;;
+		18) top;;
 		*) echo "Wrong option";; # * means anything else
 esac
 
